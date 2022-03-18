@@ -1,8 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+![Screenshot 2022-03-18 at 10 00 35](https://user-images.githubusercontent.com/60197762/158972455-70823cc7-0cbc-420b-9c20-d9939a5f0529.png)
+
+_This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)_
+
+
+## 👋 Hi, welcome to my first DAPP
+
+🥁 Presenting 🥁 
+
+> _"The most expensive way to manage your sprints"_
+
+**Lavish Sprints** is a scrum board DApp powered by a solidity smart contract. 
+This way you can be agile on the blockchain.
+Wait what? Why? 
+🤷
+
+
+
+
+## Getting Started Locally
+
+Clone this repo, `cd` to it and run the development server:
 
 ```bash
 npm run dev
@@ -10,13 +29,19 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Screenshot 2022-03-18 at 09 23 47](https://user-images.githubusercontent.com/60197762/158965482-15ed0c01-6571-43ab-a691-9aace5393bfd.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+For a quick walk-through what's behind the scenes open the **tech stack ?** popover and follow the steps.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Screenshot 2022-03-18 at 09 40 34](https://user-images.githubusercontent.com/60197762/158972264-6ad3204e-8496-4680-9a34-db808a92d6df.png)
+
+Now just:
+- connect your favorite wallet
+- switch to the Kovan network
+- check your Account is funded with some eths
+- create your first task in 🧘‍♀️ todo
 
 ## Learn More
 
