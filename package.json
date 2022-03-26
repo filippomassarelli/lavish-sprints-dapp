@@ -13,7 +13,7 @@
     "@chakra-ui/react": "^1.8.6",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
-    "@truffle/contract": "^4.5.0",
+    "@truffle/contract": "^4.2.3",
     "@truffle/hdwallet-provider": "^2.0.4",
     "axios": "^0.26.1",
     "dotenv": "^16.0.0",
@@ -21,7 +21,7 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-hdwallet-provider": "^1.0.6",
     "web3": "^1.7.1"
   },
   "devDependencies": {
@@ -30,5 +30,10 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "typescript": "4.6.2"
+  },
+  "resolutions": {
+    "node-fetch": "^3.2.3",
+    "yargs-parser": "^5.0.0",
+    "ansi-regex": "4.1.0"
   }
 }
