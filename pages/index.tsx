@@ -22,7 +22,6 @@ const Home: NextPage = () => {
   const [input, setInput] = useState<string>("");
   const [refresh, setRefresh] = useState<boolean>(true);
   const [loading, setLoading] = useState<boolean>(false);
-  const [balance, setBalance] = useState<number>(0);
   const [account, setAccount] = useState<any>(null);
   const [contract, setContract] = useState<any>(null);
   const [tasks, setTasks] = useState<any[]>([]);
@@ -64,19 +63,18 @@ const Home: NextPage = () => {
     setRefresh(true);
   };
 
-  const handleLoad = async (e: any) => {
-    setAccount(e.account);
-    setBalance(e.balance);
-    setBalances([...balances, e.balance]);
-    setTasks(e.tasks);
-    setContract(e.todoContract);
-    setEthPrice(e.ethPrice);
-    setTransactions(e.transactions);
-    setSpendData(computeSpendData(e.transactions, e.account));
-  };
-
   // Effects
   useEffect(() => {
+    const handleLoad = async (e: any) => {
+      setAccount(e.account);
+      setBalances([...balances, e.balance]);
+      setTasks(e.tasks);
+      setContract(e.todoContract);
+      setEthPrice(e.ethPrice);
+      setTransactions(e.transactions);
+      setSpendData(computeSpendData(e.transactions, e.account));
+    };
+
     if (!refresh) return;
     setLoading(true);
     load()
@@ -85,7 +83,7 @@ const Home: NextPage = () => {
       })
       .then(() => setLoading(false));
     setRefresh(false);
-  }, [refresh]);
+  }, [balances, refresh]);
 
   // Constants
   const totSpentFormatted = formatCurrency(ethPrice * spendData.tot);
