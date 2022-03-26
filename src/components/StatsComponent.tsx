@@ -20,7 +20,7 @@ const StatsComponent: FC<Props> = ({
         <Heading>${totSpentFormatted}</Heading>
       </HStack>
       <Box h="10px" />
-      <Text as="samp">Spent across {transactionCount} actions </Text>
+      <Text as="samp">Spent across {transactionCount} actions</Text>
       <Text as="samp" fontSize="xs">
         last action cost ${lastSpentFormatted}
       </Text>
